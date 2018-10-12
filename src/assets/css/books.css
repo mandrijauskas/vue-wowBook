@@ -1,0 +1,814 @@
+@charset "UTF-8";
+
+/* 
+  Reset CSS
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  max-width: 100%;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.clear {
+  clear: both;
+}
+.reset {
+  margin: 0;
+  clear: both;
+}
+
+#click_to_open {
+  left: 30% !important;
+  top: 30% !important;
+}
+
+/* Header */
+body {
+  background-color: #000;
+  margin: 0 auto;
+}
+
+/*.home {
+  background: url(../images/home.png) no-repeat;
+  width: 13px;
+  height: 13px;
+  margin: 0 10px;
+}
+.home:hover { 
+  background: url(../images/home-hover.png) no-repeat;
+  transition: .2s ease-in-out;
+}*/
+
+.home-link {
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+.home-link a {
+  color: #75ac75;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+.home-link a span {
+  font-size: 32px;
+}
+
+.header {
+  font-family: 'Roboto', sans-serif;
+  color: #ccc;
+  display: block;
+  z-index: 5;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: absolute;
+}
+
+.title-spasi, .title-nash, .title-akhmet, .title-zabyl, .title-koni, .title-konei, .title-vzor, .title-pugal {
+  display: none;
+}
+
+.header .home, .header .menu-links, .header .about-poem, .header .poem-title {
+  display: inline-table;
+  *display:inline;
+}
+
+.header .poem-title {
+  display: inline;
+  margin: auto auto auto 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.header .poem-title span {
+  font-style: italic;
+}
+
+.ac-spasi .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 401px !important;
+}
+.ac-nash .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 291px !important;
+}
+.ac-akhmet .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 230px !important;
+}
+.ac-pisto .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 316px !important;
+}
+.ac-zabyl .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 330px !important;
+}
+.ac-koni .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 265px !important;
+}
+.ac-konei .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 277px !important;
+}
+.ac-vzor .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 302px !important;
+}
+.ac-pugal .black-out {
+  margin: -2px 0 2px 111px !important;
+  width: 305px !important;
+}
+
+.mc-spasi .black-out {
+  margin: -32px 0 2px 514px !important;
+  width: 169px !important;
+}
+.mc-nash .black-out {
+  margin: -32px 0 2px 404px !important;
+  width: 169px !important;
+}
+.mc-akhmet .black-out {
+  margin: -32px 0 2px 343px !important;
+  width: 169px !important;
+}
+.mc-pisto .black-out {
+  margin: -32px 0 2px 429px !important;
+  width: 169px !important;
+}
+.mc-zabyl .black-out {
+  margin: -32px 0 2px 443px !important;
+  width: 170px !important;
+}
+.mc-koni .black-out {
+  margin: -32px 0 2px 378px !important;
+  width: 169px !important;
+}
+.mc-konei .black-out {
+  margin: -32px 0 2px 390px !important;
+  width: 169px !important;
+}
+.mc-vzor .black-out {
+  margin: -32px 0 2px 415px !important;
+  width: 169px !important;
+}
+.mc-pugal .black-out {
+  margin: -32px 0 2px 418px !important;
+  width: 169px !important;
+}
+
+.active-header {
+  color: #85786b !important;
+}
+
+.inactive-header {
+  color: #fff !important;
+}
+
+.header h3 {
+  position: relative;
+  text-transform: uppercase;
+  color: #666;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header h3 a {
+  text-decoration: none;
+  color: #666;
+  transition: 0.2 ease-in-out;
+}
+.header h3 a:hover {
+  color: #ccc;
+  transition: 0.2 ease-in-out;
+}
+/*
+.menu-links h3:before {
+  content: "";
+  background: #666;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  height: 70%;
+  width: 2px;
+}
+.menu-links h3:after {
+  content: "";
+  background: #666;
+  position: absolute;
+  bottom: 15%;
+  right: 0;
+  height: 70%;
+  width: 2px;
+}*/
+
+/* Menu Links */
+.menu-links {
+  /*border: 2px solid #666;
+  border-top: none;
+  border-bottom: 2px solid #000;*/
+  z-index: 20;
+  margin-left: -6px;
+  /* border-left: 2px solid #666;*/
+  transition: all 0s ease 0s !important;
+}
+
+.menu-links:hover {
+  color: #ccc;
+}
+
+.tab:hover { 
+  color: #fff !important;
+  transition: .2s ease-in-out; 
+}
+
+.menu-links h3 {
+  z-index: 4;
+  padding: 0 20px;
+}
+
+.active {
+  border-right: 2px solid #666;
+  border-left: 2px solid #666;
+  border-bottom: 2px solid #000;
+  padding-top: 13px;
+  margin-top: -13px;
+  transition: 0.2s ease;
+}
+
+.active-h3 {
+  margin-bottom: 8px;
+  transition: .1s ease-in-out; 
+  color: #fff !important;
+}
+
+.menu-links .black-out {
+  position: absolute;
+  z-index: 4;
+  border-top: 2px solid #000;
+  width: 169px;
+  height: 1px;
+  margin: -32px 0 2px 426px;
+}
+
+/*.dyr-poem .menu-links .black-out {
+  margin: -2px 0 2px 419px;
+  width: 169px !important;
+}*/
+
+.black-out-solo {
+  margin: -32px 0 2px 107px !important;
+  width: 169px !important;
+}
+
+.menu-links .links {
+  display: none;
+  list-style: none;
+  counter-reset: a;
+  padding-left:20px;
+}
+
+.menu-links .links span {
+  font-style: italic;
+}
+
+.menu-links .links h2 {
+  font-size: 1em;
+  color: #85786b;
+  margin-bottom: 5px;
+  padding-top: 15px;
+}
+
+.menu-links .links a {
+  color: #75ac75;
+  display: block;
+  text-decoration: none;
+  font-size: 1.38em;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif; 
+  counter-increment: a;
+}
+
+.links a:hover {
+  color: #aca28f !important;
+  transition: .2s ease-in-out; 
+}
+
+.menu-links .links a::before {
+  content: counter(a);
+  color: #fff;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0em;
+  margin-right: 0.5em;
+  text-align: center;
+  direction: rtl;
+  background: #aca28f;
+  padding: 0.2em;
+  font-size: 16px;
+}
+
+.menu-links .links a:hover:before {
+  /*background: #504a3f !important;*/
+  transition: .2s ease-in-out; 
+}
+
+.links-first {
+  float:left;
+  padding: 20px;
+}
+.links-second {
+  float: right;
+  padding: 20px 30px 30px 0;
+  margin-right: 35px;
+}
+
+.menu-container {
+  padding: 30px 0 0 0;
+  min-width: 690px;
+}
+
+.menu-container, .about-container {
+  background-color: #000;
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 38px;
+  border: 2px solid #666;
+  display: none;
+}
+
+.menu-container .menu-close {
+  /*background: url(../images/menu-close.png);*/
+  height: 34px;
+  width: 34px;
+  margin-top: -10px;
+  margin-right: -60px;
+  float: right;
+}
+
+.home {
+  /*border-right: 2px solid #666;*/
+  padding: 0 10px;
+}
+
+/* About Section */
+.about-poem {
+  display: none;
+  border-top: none;
+  border-bottom: 2px solid #000;
+  /*margin-left: -6px;*/
+  border-left: 2px solid #666;
+  border-right: 2px solid #666;
+  padding-left: 30px;
+  padding-right: 30px;
+  z-index: 20;
+}
+
+.about-poem .tab .poem-title:hover, .about-poem .tab:hover, .about-poem:hover .tab .poem-title {
+  color: #fff !important;
+  transition: 0.0s ease-in-out;
+}
+
+.about-poem .black-out {
+  position: absolute;
+  z-index: 4;
+  border-top: 2px solid #000;
+  width: 125px;
+  height: 1px;
+  margin: -2px 0 2px 162px;
+}
+
+.dyr-poem .about-poem .black-out {
+  margin: -2px 0 2px 111px;
+  width: 313px;
+}
+
+.about {
+  display: none;
+  width: 600px;
+  padding: 20px 20px 30px;
+}
+.about img {
+  float: left;
+  padding: 0 30px 0 0;
+}
+.about h2 {
+  color: #bad9b6;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.about h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  color: #fff !important;
+}
+.about h3 span {
+  font-style: italic;
+}
+.about h4 {
+  font-size: 1.2em;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+.about h4 span {
+  font-style: normal;
+}
+.about p {
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: 0.5px;
+  color: #e0d5cb;
+}
+.about h4 {
+  margin: 0;
+  color: #e0d5cb;
+}
+.about a {
+  color: #75ac75;
+}
+.lit-about {
+  margin: 20px 0;
+}
+.lit-about p {
+  font-size: 0.9em;
+}
+.about-container .menu-close {
+  /*background: url(../images/menu-close.png);*/
+  height: 34px;
+  width: 34px;
+  margin-top: -20px;
+  margin-right: -20px;
+  float: right;
+}
+
+.about-spasi,
+.about-nash,
+.about-akhmet,
+.about-dyr,
+.about-zabyl,
+.about-tianut,
+.about-vzorval,
+.about-pugal,
+.about-pistolet {
+  display: none;
+}
+
+/* Poem Section */
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+.poem-container {
+  /*background: url(../images/nash-kocken.png);*/
+  z-index: -10;
+  margin: 0 auto;
+}
+.poem-container canvas {
+  z-index: -10;
+  position: relative;
+}
+
+.translit {
+  display: none;
+  z-index: 1;
+  position: fixed;
+}
+
+.translit.nash, .translation.nash {
+  margin: -162px 0 108px 70px;
+}
+.translit.akhmet, .translation.akhmet {
+  margin: -525px 0 108px 120px;
+}
+.translit.spasi, .translation.spasi  {
+  margin: -578px 0 108px 100px;
+}
+.translit.dyr, .translation.dyr {
+  margin: -405px 0 108px 120px;
+}
+.translit.pisto, .translation.pisto {
+  margin: -485px 0 108px 60px;
+}
+.translit.zabyl, .translation.zabyl  {
+  margin: -405px 0 108px 70px;
+}
+.translit.koni, .translation.koni  {
+  margin: -595px 0 108px 130px;
+}
+.translit.konei, .translation.konei {
+  margin: -575px 0 108px 110px;
+}
+.translit.vzor, .translation.vzor {
+  margin: -565px 0 108px 110px;
+}
+.translit.pugal, .translation.pugal {
+  margin: -575px 0 108px 140px;
+}
+.translation {
+  display: none;
+  z-index: 1;
+  position: fixed;
+}
+
+.audio-container {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  z-index: 10;
+  margin-top: -5px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.audio-container:hover {
+  border-color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 40px 0 20px;
+  background: transparent;
+  border-radius: 3px;
+  color: #ccc;
+  text-transform: uppercase;
+  z-index: 5;
+}
+.btn:hover, .btn:hover:before {
+  color: #fff;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+.btn:before {
+  content:'\25BA';
+  display: inline-block;
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+  height: 20px;
+  width: 20px;
+  padding-top: 0px;
+  padding-right: 40px;
+  margin: 0;
+}
+.btn.playing:before {
+  content: '\275A\275A';
+  padding-right: 40px;
+  margin: -1px 0 0 0;
+  color: #75ac75 !important;
+}
+
+.btn.playing span {
+  color: #75ac75 !important;
+}
+.btn-active, .btn-active:before {
+  color: #fff !important;
+}
+
+/* Switches */
+.controls { 
+  font-family: 'Roboto', sans-serif; 
+  display: inline-flex; 
+  display: none;
+}
+.translit-controls-label {
+  margin: 0px 110px 0 10px !important;
+}
+.controls-label {
+  color: #ccc;
+  margin: 0px 110px 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: .4s ease-in-out;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none; 
+  cursor: pointer;
+}
+.controls-label:hover {
+  color: #fff;
+}
+
+.controls-label-toggle {
+  color: #75ac75 !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+#player {
+  color: #ccc;
+  background-color: transparent;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border: 2px solid #666;
+  border-radius: 10px;
+  padding: 0 30px;
+}
+#player:hover {
+  color: #fff;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 2px solid #ccc;
+  margin-top: -3px;
+}
+
+.slider:hover, .slider:hover:before {
+  border-color: #fff;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  right: 4px;
+  bottom: 4px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  /*border-color: #ccc;*/
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #75ac75;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-22px);
+  -ms-transform: translateX(-22px);
+  transform: translateX(-22px);
+  background-color: #75ac75;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.slider.round:hover:before {
+  background-color: #fff;
+}
+
+footer {
+  margin-top: 10px;
+  width: 875px;
+}
+.footer-spasi, 
+.footer-nash, 
+.footer-akhmet, 
+.footer-zabyl, 
+.footer-tianutkoni, 
+.footer-tianutkonei, 
+.footer-vzorval, 
+.footer-pugal,
+.footer-pistolet {
+  position: absolute;
+  width: 1032px;
+}
+
+.poem-container {
+  z-index: 4;
+  position: absolute;
+  display: none;
+}
+
+.pomada-p1 {
+  margin: -386px 0 0 451px;
+}
+.poem-spasi-img {
+  margin: -525px 0 0 445px;
+  z-index: 15;
+}
+.poem-nash-img {
+  margin: -101px 0 0 449px;
+  z-index: 15;
+}
+.poem-akhmet-img {
+  margin: -480px 0 0 507px;
+  z-index: 15;
+}
+.poem-zabyl-img {
+  margin: -394px 0 0 583px;
+  z-index: 15;
+}
+.poem-koni-img {
+  margin: -593px 0 0 529px;
+  z-index: 15;
+}
+.poem-konei-img {
+  margin: -559px 0 0 536px;
+  z-index: 15;
+}
+.poem-vzor-img {
+  margin: -548px 0 0 527px;
+  z-index: 15;
+}
+.poem-pugal-img {
+  margin: -553px 0 0 513px;
+  z-index: 15;
+}
+.poem-pistolet-img {
+  margin: -475px 0 0 528px;
+  z-index: 15;
+}
+
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  
+}
+
+
+/* Safari Fixes */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+  @media { 
+    .active { 
+      padding-top: 0; 
+      margin-top: 0;
+    }
+    .menu-links .links h2, .about h2,  .menu-links .links a  {
+      font-weight: bold;
+    }
+    .about h4, .about p {
+      font-weight: 400;
+    }
+  }
+}

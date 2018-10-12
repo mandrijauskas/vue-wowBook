@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "height": 612,
+    "width": 1280,
+    "centeredWhenClosed": true,
+    "turnPageDuration": 500,
+    "pageNumbers": false,
+    "gutterShadow": false,
+    "handleWidth": 50,
+    "flipSound": false,
+    "hardPages": true,
+    "slideShow": true,
+    "holdPage": false,
+    "pauseOnHover": false,
+    "slideShowDelay": 6000,
+    "perspective": 3000
+  }
+}
