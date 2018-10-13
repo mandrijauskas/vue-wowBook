@@ -1,5 +1,7 @@
 # vue-pageturner
 
+Proof of concept utilizing Vue and incorporating the page turner that was used for thhe Explodity website and Artists and Their Books iPads - wowBook (built utilizing jQuery, jQuery UI, wow, jQuery Easing & Modernizr).
+
 ## Project setup
 ```
 npm install
