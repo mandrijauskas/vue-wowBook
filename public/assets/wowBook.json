@@ -1,7 +1,7 @@
 {
   "settings": {
-    "height": 612,
-    "width": 1280,
+    "height": 900,
+    "width": 500,
     "centeredWhenClosed": true,
     "turnPageDuration": 500,
     "pageNumbers": false,

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import jQuery from 'jquery'
 /*!
  * modernizr v3.6.0
