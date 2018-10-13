@@ -10,7 +10,6 @@
     "flipSound": false,
     "hardPages": true,
     "slideShow": true,
-    "holdPage": false,
     "pauseOnHover": false,
     "slideShowDelay": 6000,
     "perspective": 3000
