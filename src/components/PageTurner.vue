@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import 'read-yaml'
 import $ from 'jquery'
 import 'jquery-ui'
 import '../assets/js/jquery-3.3.1.min.js'
