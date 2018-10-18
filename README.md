@@ -1,4 +1,4 @@
-# vue-pageturner
+# vue-wowBook
 
 Proof of concept utilizing Vue and incorporating the page turner that was used for the Explodity website and Artists and Their Books iPads - wowBook (a jQuery plugin that had to be adapated to webpack.  Uses: jQuery, jQuery UI, wow, jQuery Easing & Modernizr).
 
