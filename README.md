@@ -16,6 +16,11 @@ Proof of concept utilizing Vue and incorporating the page turner that was used f
   - "pauseOnHover": true/false (default: true),
   - "slideShowDelay": number in milliseconds (default: 1000), 
   - "perspective": value of the CSS 3D transformation for hard pages (default: 2000)
+  
+### Todo
+- [ ] Remove jQuery Dependency
+- [ ] Rewrite/replace wow_book
+- [ ] Update/upgrade Vue
 
 ## Project setup
 ```
